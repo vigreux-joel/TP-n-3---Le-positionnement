@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: black;
+}
+/*---------------header---------------*/
+h1,h2{
+    text-transform: uppercase;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: black;
+    padding: 10px 0;
+}
+
+header p{
+    border: 2px solid #ff7f00;
+    padding: 5px 20px;
+    width: fit-content;
+    color: #ff7f00;
+}
+header nav {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+header nav ul {
+    margin: 0 auto;
+    display: flex;
+}
+header nav li{
+    width: 125px;
+    text-align: center; 
+}
+
+header a[title="Page actuelle"]{
+    background-color: #ff7f00;
+    color: black;
+}
+
+header nav a{
+    display: block;
+    width: 100%;
+    line-height: 32px;
+    color: #ff7f00;
+}
+
+header nav .logoClass{
+    float: left;
+    flex: 1;
+    text-align: initial;
+}
+
+.pages{
+    display: flex;
+    border: #ff7f00 solid 5px;
+}
+
+/*---------------main---------------*/
+
+main{
+    max-width: 1150px;
+    margin: 0 auto;
+    color: white;
+}
+
+main h1:before{
+    content: "";
+    height: 10%;
+    width: 30%;
+    position: absolute;
+    left: 0;
+    top: 45%;
+    border-radius: 5px;
+    background-color: white;
+}
+
+main h1{
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+}
+
+main h1:after{
+    content: "";
+    height: 10%;
+    width: 30%;
+    position: absolute;
+    right: 0;
+    top: 45%;
+    border-radius: 5px;
+    background-color: white;
+}
+main h2{
+    margin: 50px auto 25px auto;
+}
+
+main a{
+    color: #ff7f00;
+}
+main .introText{
+    text-align: justify;
+}
+
+.illustration img{
+    float: right;
+    width: 500px;
+    margin: 0 0 20px 20px;
+}
+
+.inline-scnd-container:nth-child(7) img {
+    float: right;
+    width: 500px;
+    height: 250px;
+    margin: 40px 0 20px 20px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.inline-scnd-container:nth-child(8) img {
+    float: left;
+    width: 500px;
+    height: 300px;
+    margin: 0 20px 20px 0;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.inline-blocks-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inline-blocks-container img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+figure{
+    width: 24%;
+}
+
+figcaption{
+    background-color: #ff7f00;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+figure a{
+    width: 100%;
+    padding: 10px 0;
+    color: black;
+    display: block;
+}
+
+/*---------------footer---------------*/
+footer {
+    padding: 40px 0 20px 0;
+    text-align: center;
+}
+
+footer > *{
+    color: #ff7f00;
+}
